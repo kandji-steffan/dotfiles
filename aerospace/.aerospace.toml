@@ -61,7 +61,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   0
     outer.left =      24 
     outer.bottom =    24 
-    outer.top =       36 
+    outer.top =       42 
     outer.right =     24 
 
 # 'main' binding mode declaration
@@ -167,3 +167,12 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+    if.app-id = 'us.zoom.xos'
+    run = ['move-node-to-workspace 6']
+

@@ -59,6 +59,14 @@ return { -- Fuzzy Finder (files, lsp, etc)
           require('telescope.themes').get_dropdown(),
         },
       },
+      defaults = {
+        path_display = { 'truncate' },
+      },
+      pickers = {
+        lsp_references = {
+          show_line = false,
+        },
+      },
     }
 
     -- Enable Telescope extensions if they are installed

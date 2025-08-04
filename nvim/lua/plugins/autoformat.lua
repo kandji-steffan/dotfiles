@@ -6,7 +6,7 @@ return { -- Autoformat
     {
       '<leader>f',
       function()
-        require('conform').format { async = true, lsp_format = 'fallback' }
+        require('conform').format { async = false, lsp_format = 'fallback' }
       end,
       mode = '',
       desc = '[F]ormat buffer',
@@ -25,11 +25,15 @@ return { -- Autoformat
         return {
           timeout_ms = 500,
           lsp_format = 'fallback',
+          async = false,
         }
       end
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
+      -- javascript = { 'biome' },
+      -- typescript = { 'biome' },
+      -- typescript = { 'biome' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
