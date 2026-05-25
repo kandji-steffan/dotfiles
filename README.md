@@ -1,5 +1,7 @@
 # dotfiles
 
+![wallpaper](./wallpaper.png)
+
 Managed with [GNU Stow](https://www.gnu.org/software/stow/). Each top-level
 directory is a stow "package" whose contents mirror their target path under
 `$HOME`.
