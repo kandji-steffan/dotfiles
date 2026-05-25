@@ -1,0 +1,109 @@
+{
+  "Schema Add": {
+    "prefix": "sca",
+    "body": [
+      "schema.add({",
+      "  key: $1,",
+      "  defaultAddLibraryItemValue: $2,",
+      "});"
+    ],
+    "description": "Adds a schema definition"
+  },
+  "Schema Add Dependent": {
+    "prefix": "scad",
+    "body": [
+      "schema.add({",
+      "  key: $1,",
+      "  defaultAddLibraryItemValue: $2,",
+      "  defaultToApiValue: $3,",
+      "  dependentFields: [$4],",
+      "});"
+    ],
+    "description": "Adds a schema definition"
+  },
+  "Field Row": {
+    "prefix": "fcr",
+    "body": [
+      "<FormComponents.FieldRow>",
+      "  $1",
+      "</FormComponents.FieldRow>"
+    ],
+    "description": "Creates a FieldRow component"
+  },
+  "Field Row description": {
+    "prefix": "fcrd",
+    "body": [
+      "<FormComponents.FieldRow description={$1}>",
+      "  $2",
+      "</FormComponents.FieldRow>"
+    ],
+    "description": "Creates a FieldRow component"
+  },
+  "Dependent Field Container": {
+    "prefix": "fcd",
+    "body": [
+      "<FormComponents.DependentFieldContainer fieldName={$1} dependentValue={$2} dependentFields={[$3]}>",
+      "  $4",
+      "</FormComponents.DependentFieldContainer>"
+    ],
+    "description": "Creates a DependentFieldContainer component"
+  },
+  "Nested Field Container": {
+    "prefix": "fcn",
+    "body": [
+      "<FormComponents.NestedFieldContainer>",
+      "  $1",
+      "</FormComponents.NestedFieldContainer>"
+    ],
+    "description": "Creates a NestedFieldContainer component"
+  },
+  "Fields.Checkbox": {
+    "prefix": "fdc",
+    "body": [
+      "<Fields.Checkbox name={$1} label={$2} />"
+    ],
+    "description": "Creates a Fields.Checkbox component"
+  },
+  "Fields.Text": {
+    "prefix": "fdt",
+    "body": [
+      "<Fields.Text name={$1} label={$2} />"
+    ],
+    "description": "Creates a Fields.Text component"
+  },
+  "Fields.Unit": {
+    "prefix": "fdu",
+    "body": [
+      "<Fields.Unit name={$1} label={$2} />"
+    ],
+    "description": "Creates a Fields.Unit component"
+  },
+  "Fields.Select": {
+    "prefix": "fds",
+    "body": [
+      "<Fields.Select name={$1} label={$2} options={[$3]} />"
+    ],
+    "description": "Creates a Fields.Select component"
+  },
+  "Fields.MultiSelect": {
+    "prefix": "fdm",
+    "body": [
+      "<Fields.MultiSelect name={$1} label={$2} options={[$3]} />"
+    ],
+    "description": "Creates a Fields.MultiSelect component"
+  },
+  "Fields.TextArea": {
+    "prefix": "fdta",
+    "body": [
+      "<Fields.TextArea name={$1} label={$2} />"
+    ],
+    "description": "Creates a Fields.TextArea component"
+  },
+  "Fields.NullableBoolean": {
+    "prefix": "fdnb",
+    "body": [
+      "<Fields.NullableBoolean name={$1} label={$2} />"
+    ],
+    "description": "Creates a Fields.NullableBoolean component"
+  }
+}
