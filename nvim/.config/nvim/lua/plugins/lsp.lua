@@ -200,6 +200,14 @@ return {
       },
       pyright = {},
       ruff = {},
+      rust_analyzer = {
+        settings = {
+          ['rust-analyzer'] = {
+            cargo = { allFeatures = true },
+            checkOnSave = { command = 'clippy' },
+          },
+        },
+      },
       dockerls = {},
       docker_compose_language_service = {},
       postgres_lsp = {},

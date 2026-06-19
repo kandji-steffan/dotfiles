@@ -23,6 +23,7 @@ return { -- Highlight, edit, and navigate code
       'typescript',
       'css',
       'python',
+      'rust',
       'dockerfile',
       'sql',
     },

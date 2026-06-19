@@ -39,6 +39,7 @@ return { -- Autoformat
       json = { 'biome' },
       jsonc = { 'biome' },
       python = { 'ruff_format', 'ruff_organize_imports' },
+      rust = { 'rustfmt' },
       sql = { 'sql_formatter' },
     },
   },
